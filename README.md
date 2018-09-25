@@ -13,3 +13,6 @@ for the Web that will include
 - brief, humorous German stories
 - photographs
 - a timeline of scientific discoveries
+
+
+### I might do other stuff too.
