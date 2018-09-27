@@ -16,3 +16,5 @@ for the Web that will include
 
 
 ### I might do other stuff too.
+
+# Is SSH working?
