@@ -26,7 +26,7 @@ public class Travel {
         return result;
     } // getCity()
 
-    public void toggle() {
+    public void cycle() {
         this.index = (this.index + 1) % CITIES.length;
-    } // toggle()
+    } // cycle()
 } // Travel
