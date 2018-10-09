@@ -34,7 +34,7 @@ public class Author implements Comparable<Author> {
         String result = this.dateOfBirth.get(Calendar.DAY_OF_MONTH)
                 + "-"
                 + this.dateOfBirth.getDisplayName(Calendar.MONTH,
-                        Calendar.SHORT_FORMAT, Locale.US)
+                        Calendar.SHORT_FORMAT, Locale.GERMANY)
                 + "-"
                 + this.dateOfBirth.get(Calendar.YEAR);
         return result;
@@ -44,7 +44,7 @@ public class Author implements Comparable<Author> {
         String result = this.dateOfDeath.get(Calendar.DAY_OF_MONTH)
                 + "-"
                 + this.dateOfDeath.getDisplayName(Calendar.MONTH,
-                        Calendar.SHORT_FORMAT, Locale.US)
+                        Calendar.SHORT_FORMAT, Locale.GERMANY)
                 + "-"
                 + this.dateOfDeath.get(Calendar.YEAR);
         return result;

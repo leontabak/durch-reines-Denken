@@ -10,16 +10,30 @@
     <h:body>
         <div class="quotation">
             <p>
-            #{quotationdb.quotation.text}
+                #{quotationdb.quotation.germanText}
             </p>
         </div>        
 
-        <h:outputText class="author" 
-                      value="&mdash;#{quotationdb.quotation.author}"/>
-        
+        <div class="quotation">
+            <p>
+                #{quotationdb.quotation.englishText}
+            </p>
+        </div>
+
+        <div class="attribution">
+            <h:outputText class="author"
+                          value="&mdash;#{quotationdb.quotation.author.name}"/>
+
+            <br/>
+
+            <h:outputText class="dates"
+                          value="#{quotationdb.quotation.author.dateOfBirth}
+                          bis #{quotationdb.quotation.author.dateOfDeath}"/>
+        </div>
+
         <h:form id="next">
             <h:commandButton class="next" 
-                             value="NEXT QUOTATION" 
+                             value="Nächste Seite" 
                              action="#{quotationdb.cycle}"/>
         </h:form>
     </h:body>
