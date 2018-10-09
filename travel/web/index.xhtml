@@ -14,8 +14,16 @@
             </p>
         </div>        
 
-        <h:outputText class="author" 
-                      value="&mdash;#{quotationdb.quotation.author}"/>
+        <div class="attribution">
+          <h:outputText class="author"
+                        value="&mdash;#{quotationdb.quotation.author.name}"/>
+                                        
+         <br/>
+         
+          <h:outputText class="dates"
+                        value="#{quotationdb.quotation.author.dateOfBirth}
+                        to #{quotationdb.quotation.author.dateOfDeath}"/>
+        </div>
         
         <h:form id="next">
             <h:commandButton class="next" 
